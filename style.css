@@ -237,3 +237,87 @@ footer.second {
 	padding-bottom: 1%;
 	opacity: 1;
 }
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+	header {
+		position: absolute;
+	  }
+    #menu-icon {
+		display: inline-block;
+	}
+	nav:hover ul {
+       display: block;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		background: rgb(255, 112, 119);
+		width: 50%;
+		padding: 20px;
+		right: 20px;
+		top: 60px;
+		border: 1px solid #fff;
+		border-radius: 20px 0 20px 20px;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+	}
+	.one-third {
+		width: 100%;
+		margin: 0;
+	}
+	.circle {
+		width: 100px;
+		height: 100px;
+	}
+	.one-third i {
+		font-size: 360%;
+	}
+	article {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	aside {
+		width: 100%;
+	}
+    h4 {
+	font-size: 80%;
+	padding: 5% 0;
+    }
+    h3 {
+	font-size: 120%;
+	padding: 5% 0;
+	}
+	footer .one-third {
+		width: 100%;
+		margin: 0;
+	}
+	.social i {
+		font-size: 245%;
+	}
+	#footer-third {
+		min-height: 150px;
+		padding-bottom: 10%;
+		border-bottom: 1px solid #959595;
+	}
+	#footer-third-last {
+		margin-bottom: 15%;
+	}
+}
+
+@media screen and (max-width: 478px) {
+    h3 {
+	  font-size: 100%;
+	}
+	p {
+		font-size: 100%;
+		margin: 2%;
+	}
+	h4 {
+		font-size: 60%;
+	}
+}
