@@ -70,7 +70,34 @@
 				controls:false,
 			});
 		</script>
-    <!--- End Slider -->
+		<!--- End Slider -->
+		
+		<!--animate on scroll-->
+      <script type="text/javascript">
+         	$(document).ready(function(){
+          
+            // hide our element on page load
+            $('#one-third').css('opacity', 0);
+         
+             $('#article').waypoint(function() {
+         		 $('#article').addClass('');
+            }, { offset: '150%' });
+
+          });
+
+					$(document).ready(function(){
+          
+					// hide our element on page load
+					$('#circle-image').css('opacity', 0);
+			 
+					 $('#circle-image').waypoint(function() {
+						$('#circle-image').addClass('');
+					}, { offset: '150%' });
+
+				});
+		  </script>
+
+
 
    <div class="clearfix"></div>
    <div class="inner-wrapper">
@@ -116,7 +143,7 @@
 			</section> <!--ends this animation-->
 	 
 	  <!--starts this animation-->
-		<section class="os-animation" data-os-animation="zoomIn" data-os-animation-delay="2s">
+		<section class="os-animation" data-os-animation="zoomInUp" data-os-animation-delay="2s">
 		<div class="clearfix"></div>
 		<article>
 			 <img class="circle-image img-fit" src="img/rest4.jpg" alt="rest4">
